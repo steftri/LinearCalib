@@ -1,0 +1,16 @@
+# Syntax Coloring Map For LinearCalib
+# https://arduino.github.io/arduino-cli/library-specification/#keywords
+# Formatted by a single true tab (not spaces)
+
+# Datatypes (KEYWORD1)
+LinearCalib	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+map	KEYWORD2
+setParams	KEYWORD2
+getParams	KEYWORD2
+calc	KEYWORD2
+
+# Instances (KEYWORD2)
+
+# Constants (LITERAL1)
