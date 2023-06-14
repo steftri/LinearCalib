@@ -14,7 +14,7 @@ public:
   LinearCalib(const float f32_m = 1.0, const float f32_n = 0.0);
 
   void setParams(const float f32_m, const float f32_n);
-  int setParams(const float f32_set1, const float f32_mess1, const float f32_set2, const float f32_mess2);
+  int  setParams(const float f32_InMin, const float f32_InMax, const float f32_OutMin, const float f32_OutMax);
   void getParams(float *pf32_m, float *pf32_n);
 
   float calc(const float f32_Value);
