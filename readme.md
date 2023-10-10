@@ -86,7 +86,11 @@ Here the integration of the calibration class is shown with a simple Arduino Ske
 
 * `float calc(const float f32_Value);`
 
-  Calculates a calibrated value from a raw (sensor) value. This method uses the function `f(x) = m*x + n`
+  Calculates a calibrated value from a raw (sensor) value. This method uses the function `f(x) = m*x + n`.
+
+* `float calcInverse(const float f32_Value);`
+
+  Calculates a value using the inverse calibration function. This method uses the function `f-1(x) = (x-n)/m`. 
 
 * `static float map(const float f32_Value, const float f32_InMin, const float f32_InMax, const float f32_OutMin, const float f32_OutMax);`
 
@@ -120,6 +124,11 @@ This sequence diagram illustrates the initialization and the very basic usage.
 
 
 ## Changelog
+
+### 1.1.0
+
+* Inverse calculation added
+
 
 ### 1.0.0
 

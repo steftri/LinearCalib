@@ -52,6 +52,14 @@ float LinearCalib::calc(const float f32_Value)
 }
 
 
+float LinearCalib::calcInverse(const float f32_Value)
+{
+  if(mf32_m == 0.0)
+    return 0.0;
+  return (f32_Value-mf32_n)/mf32_m;
+}
+
+
 
 float LinearCalib::map(const float f32_Value, const float f32_InMin, const float f32_InMax, const float f32_OutMin, const float f32_OutMax)
 {
