@@ -15,9 +15,11 @@ public:
 
   void setParams(const float f32_m, const float f32_n);
   int  setParams(const float f32_InMin, const float f32_InMax, const float f32_OutMin, const float f32_OutMax);
+
   void getParams(float *pf32_m, float *pf32_n);
 
   float calc(const float f32_Value);
+  float calcInverse(const float f32_Value);
 
   static float map(const float f32_Value, const float f32_InMin, const float f32_InMax, const float f32_OutMin, const float f32_OutMax);
 };
